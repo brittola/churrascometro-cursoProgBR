@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CHURRASCÔMETRO</h1>
+
+        <div class="inputs">
+            <input id="numeroAdultos" type="number" placeholder="Adultos">
+            <input id="numeroCriancas" type="number" placeholder="Crianças">
+            <input id="duracao" type="number" placeholder="Duração(horas)">
+            <button id="calcBotao">Calcular</button>
+        </div>
+
+        <p onclick="mostrarInfo()" id="clicarInfo">Como o cálculo é feito?</p>
+        
+        <div id="info">
+            Carne = 450g por pessoa, se a duração for 6 ou mais horas = 650g por pessoa;
+            <hr>
+            Cerveja = 1500ml por pessoa, se a duração for 6 ou mais horas = 2500ml por pessoa;
+            <hr>
+            Refrigerante ou Agua = 800 ml por pessoa, se a duração for 6 ou mais horas = 1500ml por pessoa;
+            <hr>
+            Crianças os parâmetros são metade dos adultos, mas não fazem parte da conta da cerveja;
+        </div>
+        
+        <div id="resultado"></div>
+
+        <button id="ocultar" onclick="fecharInfoResultado()">Ocultar</button>
+   
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
