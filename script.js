@@ -8,13 +8,13 @@ let adultos = document.getElementById("numeroAdultos");
 let criancas = document.getElementById("numeroCriancas");
 let duracao = document.getElementById("duracao");
 
-let carne = 450;
-let cerveja = 1200;
-let bebidas = 1000;
-
 let resultado = document.getElementById("resultado");
 let info = document.getElementById("info");
 let ocultar = document.getElementById("ocultar");
+
+let carne = 450;
+let cerveja = 1200;
+let bebidas = 1000;
 
 function mostrarInfo(){
     info.style = 'display: block';
@@ -43,6 +43,9 @@ function calcular(){
 
     if(numeroAdultos < 0 || numeroCriancas < 0 || numeroDuracao < 1){
         alert('Preencha corretamente todos os campos');
+        adultos.value = '';
+        criancas.value = '';
+        duracao.value = '';
     }
 
     else{
