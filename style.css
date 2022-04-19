@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 66%, rgba(255,57,0,1) 100%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle, rgba(71,35,16,1) 53%, rgba(122,60,0,1) 100%);
+    color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+label{
+    cursor: pointer;
+}
+
+button{
+    width: 80px;
+    margin-top: 10px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+#info{
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#resultado{
+    border: 1px solid white;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 5px;
+    display: none;
+}
+
+#ocultarResultado{
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+#ocultarResultado:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+#infoDiv{
+    position: relative;
+    display: none;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#ocultarInfo{
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+}
+
+#ocultarInfo:hover{
+    background-color: rgb(197, 197, 197);
+}
